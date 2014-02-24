@@ -1,0 +1,15 @@
+{
+  "name": "exchange-calendar-list",
+  "version": "0.0.0",
+  "description": "Retrieve events from an Exchange calendar folder",
+  "main": "calendar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Brody",
+  "license": "BSD",
+  "dependencies": {
+    "node-promise": "*",
+    "xml2js": "*"
+  }
+}
