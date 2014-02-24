@@ -1,7 +1,6 @@
 var
   fs = require('fs')
   , promise = require('node-promise')
-	, config = require('./config.json')
 	, EventEmitter = require('events').EventEmitter
 	, util = require('util')
   , https = require('https')
