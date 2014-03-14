@@ -151,7 +151,8 @@ ExchangeCalendarList.prototype.request = function(opts) {
       var items = result['s:Envelope']['s:Body'][0]['m:FindItemResponse'][0]['m:ResponseMessages'][0]['m:FindItemResponseMessage'][0]['m:RootFolder'][0]['t:Items'][0]['t:CalendarItem'];
       items = items.map(function(item) {
         return {
-          id: item['t:ItemId'][0]['$']['Id']
+          itemId: item['t:ItemId'][0]['$']['Id'],
+          changeKey: item['t:ItemId'][0]['$']['ChangeKey']
         };
       });
       p.resolve(items);
@@ -166,7 +167,7 @@ ExchangeCalendarList.prototype.request = function(opts) {
       .replace('$FolderId$', opts.folderid)
       .replace('$FieldURI$', fields)
       .replace('$ItemId$', items.map(function(item) {
-        return '<t:ItemId Id="' + item.id + '" />'
+        return '<t:ItemId Id="' + item.itemId + '" ChangeKey="' + item.changeKey + '"/>'
       }).join('\n'))
     ;
 
@@ -204,7 +205,8 @@ ExchangeCalendarList.prototype.request = function(opts) {
       items = items.map(function(item) {
         item = item['m:Items'][0]['t:CalendarItem'][0];
         return {
-          id: item['t:ItemId'][0]['$']['Id'],
+          itemId: item['t:ItemId'][0]['$']['Id'],
+          changeKey: item['t:ItemId'][0]['$']['ChangeKey'],
           subject: item['t:Subject'][0],
           location: item['t:Location'][0],
           start: item['t:Start'][0],
