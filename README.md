@@ -1,5 +1,5 @@
 # exchange-calendar-list
-Node.js module to read entries from an Exchange calendar via EWS forked from timbrody/exchange-calendar-list
+Node.js module to read entries from an Exchange calendar via EWS using promises.
 
 This version uses node soap and xpath with xmldom to more easily navigate EWS soap messages and has been tested with Office365.
 
