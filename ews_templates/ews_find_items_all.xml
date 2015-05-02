@@ -1,20 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
-<soap:Header>
-<t:RequestServerVersion Version="Exchange2010"/>
-</soap:Header>
-<soap:Body>
 <FindItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
 xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
 Traversal="Shallow">
 <ItemShape>
 <t:BaseShape>IdOnly</t:BaseShape>
 <t:AdditionalProperties>
-<t:FieldURI FieldURI="item:Subject" />
-<t:FieldURI FieldURI="item:Categories" />
-<t:FieldURI FieldURI="calendar:Start" />
-<t:FieldURI FieldURI="calendar:End" />
+$FieldURI$
 </t:AdditionalProperties>
 </ItemShape>
 <FractionalPageItemView MaxEntriesReturned="$MaxEntriesReturned$" Numerator="0" Denominator="1"/>
@@ -22,5 +12,3 @@ Traversal="Shallow">
 <t:FolderId Id="$FolderId$"/>
 </ParentFolderIds>
 </FindItem>
-</soap:Body>
-</soap:Envelope>
