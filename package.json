@@ -1,11 +1,8 @@
 {
   "name": "exchange-calendar-list",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Retrieve events from an Exchange calendar folder",
   "main": "calendar.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": {
     "name": "Tim Brody"
   },
@@ -16,11 +13,5 @@
     "xmldom": "*",
     "soap": "*",
     "path": "*"
-  },
-  "gitHead": "553f4f1f66c338d92abccea79ed725a0419eb5f7",
-  "readme": "ERROR: No README data found!",
-  "_id": "exchange-calendar-list@0.0.0",
-  "_shasum": "e9e8dad0e8b2ea12fb25bbd8e44481d9d9cf0edb",
-  "_from": "../../../../../var/folders/5z/_gzb0kpn5hsglr_trc2_1v6r0000gn/T/npm-66839-b62f1d56/git-cache-148ff015c674/553f4f1f66c338d92abccea79ed725a0419eb5f7",
-  "_resolved": "git://github.com/timbrody/exchange-calendar-list.git#553f4f1f66c338d92abccea79ed725a0419eb5f7"
+  }
 }
