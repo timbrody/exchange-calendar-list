@@ -7,6 +7,7 @@ exchange-calendar-list is dependant on node-promises as the original.
 
 To use:
 =======
+The following example will return all the calendar entries for the past 3 months including the future 3 months.
 ```
 var exchList = require('exchange-calendar-list')();
 
