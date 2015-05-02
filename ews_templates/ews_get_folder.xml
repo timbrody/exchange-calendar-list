@@ -1,0 +1,9 @@
+    <m:GetFolder xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+       xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:FolderShape>
+        <t:BaseShape>IdOnly</t:BaseShape>
+      </m:FolderShape>
+      <m:FolderIds>
+        <t:DistinguishedFolderId Id="calendar" />
+      </m:FolderIds>
+    </m:GetFolder>

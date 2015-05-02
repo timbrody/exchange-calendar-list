@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
-<soap:Header>
-<t:RequestServerVersion Version="Exchange2010"/>
-</soap:Header>
-<soap:Body>
-<GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages">
+<GetItem xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
 <ItemShape>
-<t:BaseShape>IdOnly</t:BaseShape>
+<t:BaseShape>Default</t:BaseShape>
 <t:BodyType>Text</t:BodyType>
 <t:AdditionalProperties>
 $FieldURI$
@@ -16,5 +11,3 @@ $FieldURI$
 $ItemId$
 </ItemIds>
 </GetItem>
-</soap:Body>
-</soap:Envelope>
