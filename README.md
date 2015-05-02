@@ -9,7 +9,12 @@ To use:
 =======
 ```
 var exchList = require('exchange-calendar-list')();
-exchList.request({url: url, username: acc.access.username, password:acc.access.password, start: start, end : end, maximum: 50})
+
+var url = 'https://outlook.office365.com/EWS/Exchange.asmx';
+var username = 'someaddress@someplace.com';
+var password = 'XXXXXXX';
+
+exchList.request({ url: url, username: username, password:password, start: start, end : end })
 .then(function(items) {
   //each item contains 
   //{
