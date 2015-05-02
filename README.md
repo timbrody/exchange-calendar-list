@@ -7,6 +7,7 @@ exchange-calendar-list is dependant on node-promises as the original.
 
 To use:
 =======
+```
 var exchList = require('exchange-calendar-list')();
 exchList.request({url: url, username: acc.access.username, password:acc.access.password, start: start, end : end, maximum: 50})
 .then(function(items) {
@@ -23,3 +24,4 @@ exchList.request({url: url, username: acc.access.username, password:acc.access.p
 }, function(err) {
   if(err) throw err;
 });
+```
