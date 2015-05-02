@@ -13,6 +13,8 @@ var exchList = require('exchange-calendar-list')();
 var url = 'https://outlook.office365.com/EWS/Exchange.asmx';
 var username = 'someaddress@someplace.com';
 var password = 'XXXXXXX';
+var start = new Date().addMonth(-3);
+var end = new Date().addMonth(3);
 
 exchList.request({ url: url, username: username, password:password, start: start, end : end })
 .then(function(items) {
