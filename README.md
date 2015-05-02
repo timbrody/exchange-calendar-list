@@ -3,7 +3,7 @@ Node.js module to read entries from an Exchange calendar via EWS using promises.
 
 This version uses node soap and xpath with xmldom to more easily navigate EWS soap messages and has been tested with Office365.
 
-exchange-calendar-list is dependant on node-promises as the original. 
+exchange-calendar-list uses node-promises and promises could be added to the chain but, the continued use of node-promises is not required.
 
 To use:
 =======
